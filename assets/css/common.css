@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/* common */
+* {box-sizing: border-box;}
+img {max-width: 100%;}
+.clearfix:after{display:block; content: ''; clear:both; height:0; font-size:0; visibility:hidden;}
+.blind{position:absolute; top:0; left:0; width:1px; height:1px; font-size:0; line-height:0; overflow:hidden;}
+.container {max-width: 1200px; margin: 0 auto;}
+.em-wider {letter-spacing: -0.05em;}
+.pc_hide {display: none !important;}
+#wrap {padding-bottom: 100px;}
+
+
+/* main_wrap */
+.main_wrap .top_con {margin-bottom: 99px; padding: 49px 0 3px; border-bottom: 1px solid #959595; text-align: center;}
+.main_wrap .top_con::after {display: block; content:''; width: 100%; margin-top: 35px; border-bottom: 1px solid #959595;}
+.main_wrap .top_con .logo {margin-bottom: 80px; font-size: 0;}
+.main_wrap .top_con .ttl {margin-bottom: 10px; font-size: 50px; font-weight: 700;}
+.main_wrap .top_con .txt {font-size: 25px; font-weight: 300;}
+.main_wrap .img_list > li {display: flex; margin-bottom: 50px; padding-bottom: 50px; border-bottom: 1px solid #959595; align-items: flex-end;}
+.main_wrap .img_list > li:last-child {border-bottom: none;}
+.main_wrap .img_list > li > div {width: 50%;}
+.main_wrap .img_list > li .img_box .thumb {padding-bottom: 62.66%; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.main_wrap .img_list > li .txt_box {padding-left: 50px;}
+.main_wrap .img_list > li .txt_box .ttl {font-size: 30px; font-weight: 600;}
+.main_wrap .img_list > li .txt_box .txt {font-size: 18px;}
+.main_wrap .img_list > li .txt_box .more_btn {display: inline-block; width: 174px; height: 43px; line-height: 43px; margin-top: 55px; background-color: #e41e26; color: #fff; font-size: 22px; text-align: center;}
+
+
+/* sub_wrap */
+.sub_wrap .top_con {padding: 150px 0 50px; margin-bottom: 50px; border-bottom: 1px solid #959595; text-align: center;}
+.sub_wrap .top_con .ttl {margin-bottom: 30px; color: #e41e26;}
+.sub_wrap .top_con .ttl b {font-size: 40px; font-weight: 700;}
+.sub_wrap .top_con .ttl small {display: block; font-size: 24px; line-height: 1.25; font-weight: 600;}
+.sub_wrap .top_con .txt {margin-bottom: 50px; font-size: 24px; font-weight: 300;}
+.sub_wrap .top_con .img {font-size: 0;}
+.sub_wrap .txt_box .qna_list {margin-bottom: 40px; font-size: 18px;}
+.sub_wrap .txt_box .qna_list dt {margin-bottom: 5px; font-weight: 500;}
+.sub_wrap .txt_box .qna_list dd {font-weight: 300;}
+.sub_wrap .txt_box .img_box {margin-bottom: 45px; text-align: center;}
+.sub_wrap .txt_box .img_box .img {display: flex; flex-wrap: wrap; align-items: flex-end;}
+.sub_wrap .txt_box .img_box .img > div {position: relative; width: 50%; font-size: 0;}
+.sub_wrap .txt_box .img_box .img .plus_btn {display: inline-block; position: absolute; left: 39px; top: 45px; width: 57px; height: 57px; background: url('../images/sub/ico_plus.png') no-repeat center/contain; transition: transform 0.5s;}
+.sub_wrap .txt_box .img_box .img .plus_btn:hover {transform: rotate(90deg);}
+.sub_wrap .txt_box .img_box .img_ttl {margin-bottom: 3px; margin-top: 25px; color: #959595; font-size: 18px;}
+.sub_wrap .txt_box .img_box .img_txt {color: #959595; font-size: 15px; font-weight: 300; word-break: keep-all;}
+.sub_wrap .txt_box .img_box .last {padding: 0 48px;}
+.sub_wrap .txt_box .img_box .last .txt1 {margin-bottom: 20px; font-size: 18px; font-weight: 700;}
+.sub_wrap .txt_box .img_box .last .txt2 {position: relative; margin-bottom: 105px; font-size: 24px; line-height: 1.5; font-weight: 300;}
+.sub_wrap .txt_box .img_box .last .txt2::before {display: block; content:''; width: 58px; height: 36px; margin: 0 auto 25px; background: url('../images/sub/ico01.png') no-repeat center/contain;}
+.sub_wrap .txt_box .img_box .last .txt2::after {display: block; content:''; width: 77px; height: 48px; margin: 20px auto 0; background: url('../images/sub/ico02.png') no-repeat center/contain;}
+.sub_wrap .txt_box .img_box .last .img_ttl {text-align: left;}
+.sub_wrap .txt_box .img_box .last .img_txt {text-align: left;}
+
+
+
+
+@media screen and (max-width:768px) {
+    /* common */
+    .container {padding: 0 20px;}
+    .pc_hide {display: block !important;}
+    .m_hide {display: none !important;}
+
+
+    /* main_wrap */
+    .main_wrap .top_con {margin-bottom: 53px; padding: 40px 0 2px;}
+    .main_wrap .top_con .logo {margin-bottom: 33px;}
+    .main_wrap .top_con .logo img {max-width: 150px;}
+    .main_wrap .top_con .ttl {font-size: 26px;}
+    .main_wrap .top_con .txt {font-size: 13px;}
+    .main_wrap .img_list > li {margin-bottom: 33px; padding-bottom: 33px; flex-wrap: wrap;}
+    .main_wrap .img_list > li > div {width: 100%;}
+    .main_wrap .img_list > li .txt_box {padding-left: 0; margin-top: 16px;}
+    .main_wrap .img_list > li .txt_box .ttl {font-size: 14px;}
+    .main_wrap .img_list > li .txt_box .txt {font-size: 11px;}
+    .main_wrap .img_list > li .txt_box .more_btn {width: 116px; height: 28px; line-height: 28px; margin-top: 26px; font-size: 15px;}
+
+
+    /* sub_wrap */
+    .sub_wrap .top_con {padding: 33px 0; margin-bottom: 20px;}
+    .sub_wrap .top_con .ttl {margin-bottom: 20px;}
+    .sub_wrap .top_con .ttl b {font-size: 26px;}
+    .sub_wrap .top_con .ttl small {font-size: 15px;}
+    .sub_wrap .top_con .txt {margin-bottom: 30px; font-size: 15px;}
+    .sub_wrap .txt_box .qna_list {margin-bottom: 14px; font-size: 12px;}
+    .sub_wrap .txt_box .qna_list dt {margin-bottom: 0;}
+    .sub_wrap .txt_box .img_box {margin-bottom: 26px;}
+    .sub_wrap .txt_box .img_box .img > div {width: 100%;}
+    .sub_wrap .txt_box .img_box .img > .mo_border {margin-top: 20px; padding: 24px 26px; border: 2px solid #e41e26;}
+    .sub_wrap .txt_box .img_box .img > div img {width: 100%;}
+    .sub_wrap .txt_box .img_box .img .plus_btn {left: 53px; top: 47px;}
+    .sub_wrap .txt_box .img_box .img .plus_btn {width: 37px; height: 37px;}
+    .sub_wrap .txt_box .img_box .img_ttl {margin-top: 13px; font-size: 15px;}
+    .sub_wrap .txt_box .img_box .img_txt {font-size: 15px;}
+    .sub_wrap .txt_box .img_box .last {margin-top: 46px; padding: 0;}
+    .sub_wrap .txt_box .img_box .last .txt1 {font-size: 12px;}
+    .sub_wrap .txt_box .img_box .last .txt2 {margin-bottom: 0; font-size: 15px;}
+    .sub_wrap .txt_box .img_box .last .txt2::before {width: 38px; height: 23px; margin-bottom: 16.5px;}
+    .sub_wrap .txt_box .img_box .last .txt2::after {width: 50px; height: 31px; margin-top: 13px;}
+}
