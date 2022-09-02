@@ -8,17 +8,17 @@ img {max-width: 100%;}
 .container {max-width: 1200px; margin: 0 auto;}
 .em-wider {letter-spacing: -0.05em;}
 .pc_hide {display: none !important;}
-#wrap {padding-bottom: 100px;}
+#header {padding: 49px 0 10px; margin-bottom: 80px; background-color: #fff; text-align: center;}
+#footer {padding: 5px 0 10px;}
 
 
 /* main_wrap */
-.main_wrap .top_con {margin-bottom: 99px; padding: 49px 0 3px; border-bottom: 1px solid #959595; text-align: center;}
+.main_wrap .top_con {margin-bottom: 99px; padding: 0 0 3px; border-bottom: 1px solid #959595; text-align: center;}
 .main_wrap .top_con::after {display: block; content:''; width: 100%; margin-top: 35px; border-bottom: 1px solid #959595;}
-.main_wrap .top_con .logo {margin-bottom: 80px; font-size: 0;}
 .main_wrap .top_con .ttl {margin-bottom: 10px; font-size: 50px; font-weight: 700;}
 .main_wrap .top_con .txt {font-size: 25px; font-weight: 300;}
 .main_wrap .img_list > li {display: flex; margin-bottom: 50px; padding-bottom: 50px; border-bottom: 1px solid #959595; align-items: flex-end;}
-.main_wrap .img_list > li:last-child {border-bottom: none;}
+.main_wrap .img_list > li:last-child {margin-bottom: 0;}
 .main_wrap .img_list > li > div {width: 50%;}
 .main_wrap .img_list > li .img_box .thumb {padding-bottom: 62.66%; background-repeat: no-repeat; background-position: center; background-size: cover;}
 .main_wrap .img_list > li .txt_box {padding-left: 50px;}
@@ -60,12 +60,13 @@ img {max-width: 100%;}
     .container {padding: 0 20px;}
     .pc_hide {display: block !important;}
     .m_hide {display: none !important;}
+    #header {position: fixed; left: 0; top: 0; width: 100%; padding: 8px 0; border-bottom: 1px solid rgb(223, 223, 223);}
+    #header .logo img {max-width: 64px;}
+    #content {padding-top: 60px;}
 
 
     /* main_wrap */
     .main_wrap .top_con {margin-bottom: 53px; padding: 40px 0 2px;}
-    .main_wrap .top_con .logo {margin-bottom: 33px;}
-    .main_wrap .top_con .logo img {max-width: 150px;}
     .main_wrap .top_con .ttl {font-size: 26px;}
     .main_wrap .top_con .txt {font-size: 13px;}
     .main_wrap .img_list > li {margin-bottom: 33px; padding-bottom: 33px; flex-wrap: wrap;}
